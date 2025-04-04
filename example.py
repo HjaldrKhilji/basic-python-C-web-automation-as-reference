@@ -1,7 +1,7 @@
 from requests import Request, Session
 import json
 
-#websites change hence unless u change the code, the code may become outdated
+#websites change hence unless u change the code when the endpoints i use change, the code may become outdated
 headers___={
 
 "Cookie":"tt_chain_token=Q2ZMBexUMOK/5iLPJlGKpQ==; tiktok_webapp_theme_source=auto; tiktok_webapp_theme=dark; odin_tt=4336ea384e0452fd853471bfc5d09ce27eb94d57d8d8a040cd3d8edcc26276e932ee0a630cfa27304ed7d671490b2561658f743274d26e5491c697f1ee02faf29d51b5dcc3c4981641c8612f4b287564; delay_guest_mode_vid=5; tt_csrf_token=wmpooZKW-VgCLqjGGpUDziCN8FEL0wSWXA5I; ttwid=1%7CpXQzWrgDyWPhbnn5ivklq3_ddl7wiv1lKAosl3uAeIM%7C1743588928%7C35c8d9cb6ae4f0aef167e9d5107c4f9dc78d5129691d86b3c43f0abeebf36708; perf_feed_cache={%22expireTimestamp%22:1743760800000%2C%22itemIds%22:[%227480119139282046230%22%2C%227481638832530672903%22]}; msToken=9kdc4-mwwUP0zNkVh7ZwbxG6LOeMZgkRUH86VxCMift6S1hYlQEJiQgkYu36Pfy20d3oMaVoP0xLRTlOtEsPIyFZmwbVIeBU0ww_BNLznKxee3e3lweUlI0vLZg3YtUHJ8xbCaVvPH9M-ysYgZJ-VFIi; msToken=-0Lt9NZO4yEjVslcRTsCezVsR9vUAFMM54MUiZAr30F40tPa8mfFqTLSSJHplS4hBdNeHVuEsnIVuNxWICe8IHB4KMXvxMxAevqRJarf34w-j47nnDgycI2qSFFQohO5zdwQpAjimeFOqYseR6BK0xbp",
@@ -20,7 +20,7 @@ headers___={
 
 
 }
-#a more simpler way would be to use request.get but i didnt to enable more flexibility, just in case
+#a more simpler way would be to use request.get but i did it to enable more flexibility, just in case
 s = Session()
 searchquery="hjalderkhilji"
 
