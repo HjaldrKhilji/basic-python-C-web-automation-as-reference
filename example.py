@@ -22,8 +22,9 @@ headers___={
 }
 #a more simpler way would be to use request.get but i didnt to enable more flexibility, just in case
 s = Session()
+searchquery="hjalderkhilji"
 
-req = Request('GET', "https://tiktok.com/api/search/general/preview/?WebIdLastTime=1743030249&aid=1988&app_language=en&app_name=tiktok_web&browser_language=en-US&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F134.0.0.0%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=true&data_collection_enabled=false&device_id=7486257885664626194&device_platform=web_pc&focus_state=true&from_page=fyp&history_len=3&is_fullscreen=false&is_page_visible=true&keyword=a&odinId=7486257740722226183&os=windows&priority_region=&referer=&region=PK&screen_height=900&screen_width=1600&tz_name=Asia%2FKarachi&user_is_login=false&webcast_language=en")
+req = Request('GET', f"https://tiktok.com/api/search/general/preview/?WebIdLastTime=1743030249&aid=1988&app_language=en&app_name=tiktok_web&browser_language=en-US&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F134.0.0.0%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=true&data_collection_enabled=false&device_id=7486257885664626194&device_platform=web_pc&focus_state=true&from_page=fyp&history_len=3&is_fullscreen=false&is_page_visible=true&keyword={searchquery}&odinId=7486257740722226183&os=windows&priority_region=&referer=&region=PK&screen_height=900&screen_width=1600&tz_name=Asia%2FKarachi&user_is_login=false&webcast_language=en")
 req = req.prepare()
 
 response = s.send(req, timeout=5)
